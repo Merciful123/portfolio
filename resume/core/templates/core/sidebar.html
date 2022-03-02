@@ -1,0 +1,26 @@
+{% load static %}
+<style>
+  a.nav-link.active {
+    background-color: aquamarine;
+  }
+</style>
+
+<div class="border-right border-warning">
+  <div class="text-center">
+    <img
+      src="{% static 'core/images/code.jpg' %}"
+      alt="ProfilePic"
+      class="img-fluid rounded-circle mt-3"
+      width="160px"
+      height="180px"
+      style="padding-bottom: 35px"
+    />
+  </div>
+
+  <nav class="nav flex-column text-center">
+    <a href="{% url 'about' %}" class="nav-link {{about}}">About</a>
+    <a href="{% url 'services' %}" class="nav-link {{services}}">Services</a>
+    <a href="{% url 'skills' %}" class="nav-link {{skills}}">Skills</a>
+    <a href="{% url 'contact' %}" class="nav-link {{contact}}">Contact</a>
+  </nav>
+</div>

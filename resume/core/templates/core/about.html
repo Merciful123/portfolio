@@ -1,0 +1,39 @@
+{% extends 'core/base.html' %} {% load static %} {% block content %}
+
+<title>About</title>
+
+<div class="mt-5">
+  <div class="text-center">
+    <img
+      id="main-image"
+      src="{% static 'core/images/rumi-love-q.jpg' %}"
+      alt="ProfilePic"
+      class="image-thumbnail"
+      height="200px"
+      width="180px"
+    />
+  </div>
+
+  <div class="text-black mt-5 mx-5 text-justify">
+    <h3 class="text-black" style="font-style: italic">Hello,</h3>
+    <div class="px-4" style="line-height: 2rem">
+      <p style="text: indent 100px">
+        I am Aamir Raza. Studying Bachelor of Computer applications from SVS
+        UNIVERSITY (MEERUT), I'm a self-learner and learning<b>
+          full-stack development</b
+        >
+        skills.
+      </p>
+    </div>
+  </div>
+  <div class="text-center">
+    <a href="{% url 'services' %}" class="btn btn-outline-warning my-3 mr-5"
+      ><b> Hire Me For </b></a
+    >
+    <a href="{% url 'contact' %}" class="btn btn-outline-info my-3"
+      ><b>Contact Me <i class="fa-code"></i></b
+    ></a>
+  </div>
+</div>
+
+{% endblock content %}
