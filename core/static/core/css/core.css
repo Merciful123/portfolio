@@ -1,0 +1,46 @@
+html,
+body {
+    height: 100%;
+}
+
+.container-fluid {
+    min-height: 100%;
+}
+
+.i-color {
+    color: purple;
+    size: 50 px;
+    padding-right: 40 px;
+}
+
+.i-color:hover {
+    transform: scale(1.5);
+}
+
+a.nav-link {
+    color: #515bf0;
+    font: bolder;
+}
+
+a.nav-link:hover {
+    color: rgb(224, 7, 7);
+    background-color: rgb(199, 221, 213);
+}
+
+a.nav-link:active {
+    color: #101aa8;
+    background-color: blueviolet;
+}
+
+#main-image:hover {
+    transform: scale(1.5);
+}
+
+.sideimage {
+    padding-bottom: 5px;
+}
+
+.progress {
+    padding-bottom: 10px;
+    padding-top: 20px;
+}

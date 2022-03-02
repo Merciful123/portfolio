@@ -1,0 +1,63 @@
+{% extends 'core/base.html' %} {% block content %}
+<title>Contact</title>
+<style>
+  a {
+    padding: 10px;
+  }
+</style>
+
+<div class="container mt-2">
+  <h1 class="text-primary mb-2 border-bottom">Contact Me</h1>
+  <div class="row text-black mb-5">
+    <p>Do you have any queries? Please do not hesitate to contact.</p>
+    <div class="col-sm-9 mb-5">
+      <form action="">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail"> Name * </label>
+            <input type="text" class="form-control" id="inputName" required />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail"> Email * </label>
+            <input type="email" class="form-control" id="inputEmail" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputSubject"> Subject </label>
+          <input type="text" class="form-control" id="inputSubject" />
+        </div>
+        <div class="mb-3">
+          <label for="inputTextarea"> Message * </label>
+          <textarea class="form-control" id="inputTextarea" required></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Send</button>
+      </form>
+    </div>
+    <div class="col-sm-3 text-center">
+      <ul class="list-unstyled">
+        <li>
+          <i class="fas fa-map-marker-alt fa-2x i-color"></i>
+          <p>Jamia Nagar, South Delhi-110025</p>
+        </li>
+        <li>
+          <i class="fas fa-phone mt-2 fa-2x i-color"></i>
+          <p>+91 7503552330</p>
+        </li>
+        <li>
+          <i class="fas fa-envelope mt-2 fa-2x i-color"></i>
+          <p>Email-raza949597@gmail.com</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="text-center">
+  <a href="https://github.com/Merciful123?tab=repositories" target="_blank"
+    ><i class="fab fa-github fa-3x i-color mb-5"></i
+  ></a>
+  <a href="https://www.linkedin.com/in/aamir-raza-59823016a/" target="_blank"
+    ><i class="fab fa-linkedin fa-3x i-color mb-5"></i
+  ></a>
+</div>
+
+{% endblock content %}
