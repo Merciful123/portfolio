@@ -27,6 +27,8 @@ SECRET_KEY = '@a4eij(8rd(ulpd2tgdb3jstoa_^5yz%5^rriqj2)$p+arzoxw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+ALLOWED_HOSTS = ["*"]
+
  
 
 
