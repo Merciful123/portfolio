@@ -27,7 +27,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["portfolio570.herokuapp.com", 'localhost']
+ALLOWED_HOSTS = ["newportfolio570.herokuapp.com", 'localhost']
 
  
 
@@ -128,4 +128,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
  
-STATIC_ROOT = BASE_DIR / 'static/'
+STATIC_ROOT = BASE_DIR / 'static'
